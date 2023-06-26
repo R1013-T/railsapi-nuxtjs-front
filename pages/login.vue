@@ -43,8 +43,7 @@ export default {
   methods: {
     login () {
       this.loading = true
-      // eslint-disable-next-line no-return-assign
-      setTimeout(() => this.loading = false, 1000)
+      this.$router.push('/projects')
     }
   }
 }
